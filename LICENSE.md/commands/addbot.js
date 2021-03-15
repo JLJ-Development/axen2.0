@@ -18,11 +18,13 @@ module.exports = {
         const eembed = new Discord.MessageEmbed()
         eembed.setTitle("Invalid Format")
         eembed.setDescription("Please provide us the Bot ID! || `a/addbot <Bot ID> <Prefix>`")
+        eembed.setFooter("<> = Necessary Arguments")
         eembed.setColor("RED")
         
         const prefixlol = new.Discord.MessageEmbed()
         prefixlol.setTitle("Invalid Format")
         prefixlol.setDescription("Please Provide the Prefix! || `a/addbot <Bot ID> <Prefix>`")
+        prefixlol.setFooter("<> = Necessary Arguments")
         prefixlol.setColor("RED")
 
         if (!args[0]) return message.channel.send(eembed)
