@@ -21,7 +21,9 @@ module.exports = {
         eembed.setColor("RED")
         
         const prefixlol = new.Discord.MessageEmbed()
-        prefixlol.setTitle("Please Provide the Prefix! || `a/addbot <Bot ID> <Prefix>`")
+        prefixlol.setTitle("Invalid Format")
+        prefixlol.setDescription("Please Provide the Prefix! || `a/addbot <Bot ID> <Prefix>`")
+        prefixlol.setColor("RED")
 
         if (!args[0]) return message.channel.send(eembed)
 
@@ -35,7 +37,7 @@ module.exports = {
             .addField("User:", `${message.author}`)
             .addField("Bot Link", `[Link](https://discord.com/api/oauth2/authorize?client_id=${args[0]}&permissions=0&scope=bot)`)
             .addField("Prefix", `\`${args[1]}\``)
-            .addField("Name", `<@${args[0]}>`)
+            .addField("Name", `<@!${args[0]}>`)
             .setColor("GREEN")
 
             message.channel.send(eeeembed)
