@@ -6,7 +6,7 @@ module.exports = {
     async run(client, message, args) {
 
       const eeeembed = new Discord.MessageEmbed()
-      eeeembed.setTitle("Your Bot Has Been Submitted")
+      eeeembed.setTitle("Your Bot Has Been Submitted!")
       eeeembed.setColor("GOLD")
 
           const eeembed = new Discord.MessageEmbed()
@@ -16,12 +16,16 @@ module.exports = {
         if (message.channel.id !== "783123863575330816" && "776693411990077440" && "776693471951192094") return message.channel.send(eeembed)
 
         const eembed = new Discord.MessageEmbed()
-        eembed.setTitle("Add The Prefix And bot id Example: || a/addbot <Bot ID> <prefix>")
+        eembed.setTitle("Invalid Format")
+        eembed.setDescription("Please provide us the Bot ID! || `a/addbot <Bot ID> <Prefix>`")
         eembed.setColor("RED")
+        
+        const prefixlol = new.Discord.MessageEmbed()
+        prefixlol.setTitle("Please Provide the Prefix! || `a/addbot <Bot ID> <Prefix>`")
 
         if (!args[0]) return message.channel.send(eembed)
 
-        if (!args[1]) return message.channel.send(eembed)
+        if (!args[1]) return message.channel.send(prefixlol)
 
         let text = args.join(" ")
         if (!text) return message.channel.send(eembed)
