@@ -10,10 +10,10 @@ module.exports = {
       eeeembed.setColor("GOLD")
 
           const eeembed = new Discord.MessageEmbed()
-        eeembed.setDescription("You can only execute this command in <#783123863575330816>")
+        eeembed.setDescription("You can only execute this command in <#823833452213698610>")
         eeembed.setColor("RED")
 
-        if (message.channel.id !== "783123863575330816" && "776693411990077440" && "776693471951192094") return message.channel.send(eeembed)
+        if (message.channel.id !== "823833452213698610" && "823831652316479528") return message.channel.send(eeembed)
 
         const eembed = new Discord.MessageEmbed()
         eembed.setTitle("Invalid Format")
@@ -44,6 +44,6 @@ module.exports = {
 
             message.channel.send(eeeembed)
 
-        client.channels.cache.get('784657197392723968').send(embed)
+        client.channels.cache.get('823835779423272960').send(embed)
     }
 }

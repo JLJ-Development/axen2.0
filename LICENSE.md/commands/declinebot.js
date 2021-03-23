@@ -43,7 +43,7 @@ let reason = args.slice(2).join(" ")
     if (!member) return message.channel.send(eembed)
     if (!reason) return message.channel.send(eembed)
     if (!member.kick) return message.channel.send(eembed)
-       client.channels.cache.get('776692229376311296').send(embed)
-client.channels.cache.get('776692229376311296').send(`<@${args[1]}>`)
+       client.channels.cache.get('823835920754147358').send(embed)
+client.channels.cache.get('823835068719169586').send(`<@${args[1]}>`)
   }
 }
