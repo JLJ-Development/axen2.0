@@ -5,10 +5,10 @@ module.exports = {
 
   async run(client, message, args) {
     const a = new Discord.MessageEmbed()
-    a.setDescription("*You can only use this in <#776751493139267605>*")
+    a.setDescription("*You can only use this in <#823842634577346601>*")
     a.setColor("RED")
 
-    if (message.channel.id !== "776751493139267605") return message.channel.send(a)
+    if (message.channel.id !== "823842634577346601") return message.channel.send(a)
 
     const e = new Discord.MessageEmbed()
     e.setTitle("Add a code lol")
@@ -28,6 +28,6 @@ module.exports = {
 
     message.channel.send(eembed)
 
-    client.channels.cache.get('820814538676109342').send(embed)
+    client.channels.cache.get('823842482188976138').send(embed)
   }
 }
